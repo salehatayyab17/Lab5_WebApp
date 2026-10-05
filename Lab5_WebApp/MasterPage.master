@@ -1,0 +1,28 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="Lab5_WebApp.MasterPage" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>ASP.NET Master Page Example</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server" />
+        <div id="header">
+            <h1>Welcome to My Website</h1>
+            <h2>Visual Programming Lab by Saleha Tayyab</h2>
+            <ul>
+                <li><a href="Default.aspx">Home</a></li>
+                <li><a href="About.aspx">About</a></li>
+                <li><a href="Contact.aspx">Contact</a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </div>
+        <div id="footer">
+            <p>© 2026, Saleha Tayyab - Visual Programming Lab</p>
+        </div>
+    </form>
+</body>
+</html>
